@@ -1,0 +1,11 @@
+digraph {
+	MSN [label="Dane County Regional Truax Field" city=Madison country="United States"]
+	ORD [label="Chicago O'Hare International Airport" city=Chicago country="United States"]
+	MSP [label="Minneapolis-St Paul International/Wold-Chamberlain Airport" city=Minneapolis country="United States"]
+	MSN -> MSP [airlines=DL weight=227.83837012007174]
+	MSN -> ORD [airlines="AA,UA,US" weight=108.48635335854897]
+	MSP -> MSN [airlines=DL weight=227.83837012007174]
+	MSP -> ORD [airlines="AA,DL,NK,UA,US" weight=334.148976491942]
+	ORD -> MSN [airlines="AA,UA,US" weight=108.48635335854897]
+	ORD -> MSP [airlines="AA,DL,NK,UA,US" weight=334.148976491942]
+}
